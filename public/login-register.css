@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
+:root{
+    --color1: rgb(207, 255, 99);
+    --color2: rgb(176, 230, 140);
+    --color3: rgb(250, 152, 49);
+    --color4: rgb(255, 202, 99);
+    --color5: rgb(28, 145, 63);
+    --color6: rgb(60, 150, 0);
+
+    /* --color2: rgb(220, 243, 150); */
+    /* --color6: rgb(173, 231, 0); */
+}
+*{
+    font-family: Calibri, 'Dosis', 'Open Sans', sans-serif ;
+}
+.out{
+    text-decoration: none;
+    font-weight: bolder;
+    color: black;
+    font-size: 20px;
+    float: right;
+    margin-right: 10px;
+}
+.login, .register{
+    width: 350px;
+    height: 500px;
+    border: black solid 2px;
+    border-radius: 10px;
+    background-color: white;
+}
+#login-logo, .login, #register-logo, .register{
+    display: block;
+    margin: 50px auto;
+}
+#register-logo{
+    margin: unset;
+    margin: 40px auto;
+}
+.tai-khoan, .mat-khau{
+    border: unset;
+    height: 40px;
+    width: 250px;
+    background-color: var(--color2);
+    display: block;
+    margin: 0px auto 15px;
+    padding-left: 10px;
+}
+#quen-mat-khau{
+    margin-left: 50px;
+    text-decoration: none;
+    color: rgb(0, 191, 255);
+    font-size: 14px;
+    font-weight: bolder;
+}
+#dang-ki, #label-dang-ki{
+    float: left;
+}
+#label-dang-ki{
+    font-weight: bolder;
+    margin-left: 50px;
+    font-size: 14px;
+    float: left;
+}
+#dang-ki{
+    padding-left: 5px;
+    float: left;
+    text-decoration: none;
+    color: rgb(0, 191, 255);
+    font-weight: bolder;
+    font-size: 14px;
+    margin: 14px 0px;
+}
+#login-button, #register-button{
+    width: 100px;
+    height: 40px;
+    border: unset;
+    color: white;
+    font-weight: bolder;
+    background-color: var(--color6);
+    display: block;
+    margin: 50px auto;
+}
+#register-button{
+    margin: unset;
+    margin: 20px auto;
+}
+#xac-nhan{
+    margin-left: 20px;
+}
+#label-xac-nhan{
+    font-size: 14px;
+    font-weight: bolder;
+}
+@media (max-width: 739px) {
+    .login, .register{
+        width: auto;
+        height: auto;
+    }
+}
+@media (max-width: 320px) {
+    .tai-khoan, .mat-khau{
+        width: 200px;
+    }
+    #register-logo, #login-logo{
+        width: 200px;
+    }
+    #quen-mat-khau, #label-dang-ki{
+        margin-left: 35px;
+    }
+}
+
+
+
+

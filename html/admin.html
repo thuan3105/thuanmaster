@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <script src="sanpham.js"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        .themsp {
+            display: flex;
+            flex-direction: column;
+            width: 70%;
+            border: 1px solid #444;
+            margin: auto;
+            padding: 30px;
+            margin-top: 50px;
+            box-shadow: 2px 2px 5px #ddd;
+        }
+
+        .themsp label input {
+            width: 100%;
+
+        }
+
+        .themsp label {
+            margin-top: 20px;
+        }
+
+        .themsp input {
+            margin-top: 5px;
+            padding: 10px 20px;
+            border: 1px solid #444;
+            border-radius: 5px;
+
+        }
+
+        .themsp button {
+            width: 100%;
+            margin-top: 20px;
+            padding: 10px 20px;
+            border: 1px solid #444;
+            border-radius: 5px;
+            background-color: #ff5741;
+            color: white;
+        }
+
+        .themsp button:hover {
+            background-color: #f6432d;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="themsp">
+        <label for="imgsp">Hình ảnh sản phẩm</label>
+        <input type="text" id="imgsp">
+
+        <label for="tensp">Tên sản phẩm</label>
+        <input type="text" id="tensp">
+
+        <label for="giasp">Giá sản phẩm</label>
+        <input type="number" id="giasp">
+
+        <button onclick="onclicktaosanpham()">Tạo sản phẩm</button>
+    </div>
+    <script>
+    </script>
+</body>
+
+</html>

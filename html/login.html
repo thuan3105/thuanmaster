@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <link rel="shortcut icon" href="/LogoShortcut.png" />
+        <title>Veget4Farm</title>
+        <link rel="stylesheet" href="../public/main.css">
+        <link rel="stylesheet" href="../public/login-register.css">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="sanpham.js"></script>
+    </head>
+    <body>
+        <main>
+            <div class="login" >
+                <a class="out" href="index.html">x</a>
+                <form>
+                    <img id="login-logo" src="../public/Logo.png" width="250px">
+                    <div class="taikhoan-matkhau">
+                        <input class="tai-khoan" type="text" id="userlogin" placeholder="Tài khoản">
+                        <input class="mat-khau" type="password" id="passlogin" placeholder="Mật khẩu">
+                        <a id="quen-mat-khau" href="#">Quên Mật Khẩu ?</a>
+                        <div>
+                            <p id="label-dang-ki">Bạn chưa có tài khoản?</p> 
+                            <a id="dang-ki" href="register.html">Đăng Kí</a>
+                        </div>
+                    </div>
+                    <button id="login-button" type="button" onclick="onclicklogin()">ĐĂNG NHẬP</button>
+                </form>
+            </div>
+        </main>
+    </body>
+</html>

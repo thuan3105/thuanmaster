@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
+    <script src="sanpham.js"></script>
+    <title>Giỏ Hàng</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        .gio-hang {
+            border: 1px solid rgb(110, 110, 110);
+            box-shadow: 2px 2px 4px #ddd;
+            padding: 20px;
+            margin: auto;
+            max-width: 1000px;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        input {
+            padding: 5px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .item-gio-hang {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .item-gio-hang .img-gio-hang img {
+            width: 60px;
+            height: 60px;
+        }
+
+        .item-gio-hang .img-gio-hang,
+        .soluong,
+        .hanhdong,
+        .tongtien {
+            flex: 1;
+            margin-left: 20px;
+        }
+
+        .item-gio-hang .gia-san-pham {
+            flex: 1;
+        }
+
+        .item-gio-hang .ten-san-pham {
+            flex: 1;
+        }
+
+        .item-gio-hang .gia-san-pham {
+            font-size: 16px;
+            color: #f6432d;
+        }
+
+        .item-gio-hang .hanhdong i:hover {
+            color: #f6432d;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="gio-hang">
+        <div class="item-gio-hang">
+            <div class="img-gio-hang">
+                <img src="../public/caiboxoi.jpg">
+            </div>
+            <p class="ten-san-pham">Cải bó xôi</p>
+            <div class="gia-san-pham">20.000VND</div>
+            <input type="number" class="soluong" value="1">
+            <p class="tongtien">20.000VND</p>
+            <div class="hanhdong">
+                <i class="fas fa-trash-alt"></i>
+            </div>
+        </div>
+
+    </div>
+    <script>
+    </script>
+</body>
+
+</html>

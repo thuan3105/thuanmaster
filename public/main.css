@@ -1,0 +1,332 @@
+@import url(https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css);
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+:root {
+    --color1: rgb(207, 255, 99);
+    --color2: rgb(176, 230, 140);
+    --color3: rgb(250, 152, 49);
+    --color4: rgb(255, 202, 99);
+    --color5: rgb(28, 145, 63);
+    --color6: rgb(60, 150, 0);
+    /* --color2: rgb(220, 243, 150); */
+    /* --color6: rgb(173, 231, 0); */
+}
+
+html {
+    background-color: var(--color2);
+}
+
+header.topheader {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    justify-content: flex-end;
+    border:1.5px solid #ccc;
+    top: 0;
+    left: 70px;
+    right: 70px;
+    width: auto;
+    padding: 0px;
+    background-color: #3c9600;
+}
+.search-bar-gio-hang {
+    display: flex;
+    flex-direction: row;
+    float: right;
+}
+
+.search-bar {
+    margin: 6px 0px;
+    padding: 2px;
+    border: whitesmoke solid 2px;
+    border-radius: 10px;
+    background: whitesmoke;
+}
+
+#search {
+    width: 200px;
+    border: 0px;
+    background-color: whitesmoke;
+}
+
+.search-bar::after {
+    font-size: 16px;
+    font-family: FontAwesome;
+    content: "\f002";
+}
+
+.gio-hang::before {
+    margin-top: 5px;
+    font-size: 30px;
+    display: flex;
+    font-family: FontAwesome;
+    content: "\f07a";
+}
+
+main {
+    height: 100%;
+    margin: 40px 70px 0px;
+}
+
+.logo {
+    margin: 120px 70px 40px;
+}
+
+#logo {
+    display: block;
+    margin: auto;
+}
+
+.label {
+    height: 40px;
+    width: 80px;
+    padding: 1px 20px;
+    background-color: var(--color6);
+    border-radius: 10px;
+    margin: 5px 20px;
+    border:1.5px solid #ccc;
+}
+
+.label-content {
+    font-weight: bolder;
+    margin: 8px auto;
+    font-size: 20px;
+    text-align: center;
+    color: whitesmoke;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: var(--color6);
+    height: auto;
+    border-radius: 20px;
+    margin-bottom: 100px;
+    border:1.5px solid #ccc;
+}
+
+.product {
+    background-color: white;
+    height: auto;
+    border-radius: 20px;
+    margin: 50px 50px;
+}
+
+.img-product {
+    margin-top: 20px;
+}
+
+.name-product, .price-product {
+    text-align: center;
+    margin: unset;
+    font-weight: bold;
+}
+
+.detail {
+    font-weight: bolder;
+    color: whitesmoke;
+    background-color: var(--color5);
+    display: block;
+    margin: 0px auto;
+}
+
+@media (max-width: 1080px) {
+    .label {
+        height: auto;
+        
+    }
+}
+
+@media (max-width: 739px) {
+    .label {
+        height: auto;
+        padding: 10px;
+        margin: 5px;
+    }
+    .label-content {
+        margin: 0px auto;
+    }
+    #search {
+        width: 150px;
+    }
+    .logo {
+        margin: 120px 0px 40px;
+    }
+}
+
+@media (max-width: 360px) {
+    #search {
+        width: 100px;
+    }
+}
+
+@media (max-width: 320px) {
+    #logo {
+        width: 250px;
+    }
+}
+
+@media (max-width: 280px) {
+    .nav-content {
+        font-size: 12px;
+        margin: 0px;
+    }
+    .label {
+        width: 40px;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Calibri, 'Dosis', 'Open Sans', sans-serif;
+}
+
+header nav.main-menu {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav.main-menu ul {
+    list-style: none;
+}
+
+header nav.main-menu ul li {
+    float: left;
+    position: relative;
+}
+
+header nav.main-menu ul li a {
+    display: inline-block;
+        text-decoration: none;
+        padding: 10px 15px;
+        color: rgb(255, 255, 255);
+        font-size: 16px;
+        font-weight: bold;
+        margin: 5px;
+}
+
+header nav.main-menu ul li a:hover {
+    background-color: whitesmoke;
+    border-radius: 5px;
+    color: var(--color5);
+}
+header nav.main-menu ul li:hover ul{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   border-radius: 3px;
+}
+header nav.main-menu  ul li:last-child{
+    border: none;
+}
+header nav.main-menu > ul > li > ul {
+    display: none;
+    position: absolute;
+    padding: auto;
+    height: 50px;
+    width: 200%;
+    background-color: #3c8500;
+}
+header p {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 15px;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+header div.icon-bar {
+    padding: 10px 15px;
+    display: none;
+}
+
+.icon-bar label {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+input#ck {
+    display: none;
+}
+
+input#ck:checked+ul {
+    display: block;
+}
+
+@media screen and (max-width: 640px) {
+    header nav.main-menu ul {
+        display: none;
+    }
+    header nav.main-menu ul li {
+        float: none;
+        text-align: right;
+    }
+    header nav.main-menu ul li a {
+        display: inline-block;
+        text-decoration: none;
+        padding: 10px 15px;
+        color: rgb(255, 255, 255);
+        font-size: 16px;
+        font-weight: bold;
+        margin: 5px;
+    }
+    header nav.main-menu ul li a:hover {
+        background-color: whitesmoke;
+        border-radius: 5px;
+        color: var(--color5);
+    }
+    header nav.main-menu > ul > li > ul {
+        display: none;
+        position: absolute;
+        padding: auto;
+        width: 250px;
+        height: 49px;
+        top: 0px;
+        right: 100px;
+        background-color: #3c8500;
+    }
+    header nav.main-menu ul li:hover ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-radius: 3px;
+     }
+    header nav.main-menu div.icon-bar {
+        padding: 10px 15px;
+        display: block;
+    }
+    header nav.main-menu {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+    }
+    header nav.main-menu p {
+        display: inline-block;
+        text-decoration: none;
+        color: white;
+        padding: 10px 15px;
+    }
+    header.topheader {
+        display: flex;
+        flex-direction: row;
+        position: fixed;
+        justify-content: space-between;
+        background-color: #3c9600;
+        top: -2;
+        left: 3%;
+        right: 3%;
+        width: auto;
+        padding: 10px 0px;
+    }
+    main {
+        height: 100%;
+        margin: 40px 3% 0px;
+    }
+}
